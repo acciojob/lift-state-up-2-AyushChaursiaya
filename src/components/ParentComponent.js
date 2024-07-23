@@ -8,7 +8,7 @@ function ParentComponent() {
     const [text, setText] = useState('');
 
     const handleTextChange = (newText) => {
-        setText(newText.target.value)
+        setText(newText)
     }
     return (<div className="parent">
         <h2>Parent Component</h2>
