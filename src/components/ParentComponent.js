@@ -13,7 +13,7 @@ function ParentComponent() {
     return (<div className="parent">
         <h2>Parent Component</h2>
         <p>{text}</p>
-        <ChildComponent type='text' value={text} onTextChange={handleTextChange} />
+        <ChildComponent type='text' text={text} onTextChange={handleTextChange} />
     </div>)
 }
 
