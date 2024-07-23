@@ -6,7 +6,7 @@ function ChildComponent({text, ontextChange}) {
         ontextChange(e.target.value);
     }
 
-    return (<div>
+    return (<div className="child">
         <h2>Child Component</h2>
         <input text={text} onChange={handleChange} />
     </div>)
