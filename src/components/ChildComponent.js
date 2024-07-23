@@ -1,3 +1,5 @@
+// ChildComponent.js
+
 import React from "react";
 
 function ChildComponent({text, ontextChange}) {
@@ -8,7 +10,7 @@ function ChildComponent({text, ontextChange}) {
 
     return (<div className="child">
         <h2>Child Component</h2>
-        <input text={text} onChange={handleChange} />
+        <input type="text" value={text} onChange={handleChange} />
     </div>)
 }
 

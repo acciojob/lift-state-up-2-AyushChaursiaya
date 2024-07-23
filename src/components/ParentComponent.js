@@ -1,3 +1,5 @@
+// ParentComponent.js
+
 import React, { useState } from "react";
 import ChildComponent from "./ChildComponent";
 import '../styles/App.css'
@@ -11,7 +13,7 @@ function ParentComponent() {
     return (<div className="parent">
         <h2>Parent Component</h2>
         <p>{text}</p>
-        <ChildComponent type='text' value={text} onTextChange={setText} />
+        <ChildComponent type='text' value={text} onChange={handleTextChange} />
     </div>)
 }
 
