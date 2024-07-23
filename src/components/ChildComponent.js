@@ -2,10 +2,10 @@
 
 import React from "react";
 
-function ChildComponent({text, ontextChange}) {
+function ChildComponent({text, onTextChange}) {
 
     const handleChange = (e) => {
-        ontextChange(e.target.value);
+        onTextChange(e.target.value);
     }
 
     return (<div className="child">
